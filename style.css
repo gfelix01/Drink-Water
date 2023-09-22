@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monserrat:400,600&display=swap');
 
 
 :root {
-    --border-color: #144fc6;
+    --border-color: #7b1283;
+    --fill-color: #6ab3f8
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 body {
-    background-color: #3494ec;
+    background-color: #138197;
     color: #fff;
     font-family: 'Monserrat' sans-serif;
     display: flex;
@@ -47,4 +48,24 @@ h3 {
 .cup.cup-small {
     height: 95px;
     width: 50px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: l14px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+    background-color: var(--fill-color);
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
 }
